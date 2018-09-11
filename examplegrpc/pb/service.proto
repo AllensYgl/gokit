@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package pb;
+
+// The YouServiceName service definition.
+service YouServiceName {
+  // Sends a greeting
+  rpc YouServiceFuncName (ServiceRequest) returns (ServiceReply) {}
+}
+
+// The request message containing the user's name.
+message ServiceRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message ServiceReply {
+  string message = 2;
+}
+
